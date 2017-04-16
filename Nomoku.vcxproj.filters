@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -13,18 +9,67 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{73920eda-85fe-4b3f-aa27-517f8abadd4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{76c82203-a079-48d5-b4ea-fc6653a337b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pisqpipe.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Lib</Filter>
     </ClCompile>
-    <ClCompile Include="Nomoku.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_Nomoku.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Board_controller.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_Wrapper.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="ANN.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="GA.cpp">
+      <Filter>AI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI_Nomoku.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Board_controller.h">
+      <Filter>AI</Filter>
+    </ClInclude>
     <ClInclude Include="pisqpipe.h">
-      <Filter>头文件</Filter>
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_Wrapper.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ANN.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="GA.h">
+      <Filter>AI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

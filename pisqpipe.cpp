@@ -2,14 +2,16 @@
 /** don't modify this file */
 
 #include <windows.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <stdarg.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <cctype>
+#include <cstdarg>
+#include <thread>
+#include "GA.h"
 #include "pisqpipe.h"
 
-int width, height; /* the board size */
+int width=20, height=20; /* the board size */
 int info_timeout_turn = 30000; /* time for one turn in milliseconds */
 int info_timeout_match = 1000000000; /* total time for a game */
 int info_time_left = 1000000000; /* left time for a game */
@@ -246,7 +248,8 @@ static void do_command()
 
 /** main function for AI console application  */
 int main()
-{
+{	
+	std::thread ga(GA);
 	DWORD mode;
 	if (GetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), &mode))
 		puts("MESSAGE Gomoku AI should not be started directly. Please install gomoku manager (http://sourceforge.net/projects/piskvork). Then enter path to this exe file in players settings.");

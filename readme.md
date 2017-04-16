@@ -7,3 +7,15 @@
 注意：你生成的exe文件必须以`pbrain-`为前缀，否则无法被piskvork识别
 
 另外，不要修改`pisqpipe.cpp`和`pisqpipe.h`，否则AI可能会无法运行
+
+
+
+## Usage
+
+1. Download [piskvork](http://petr.lastovicka.sweb.cz/piskvork.zip)
+2. Select the exe product of your code in piskvork manager
+3. Enjoy! Start competing with other AIs!
+
+Note: your product should have `pbrain-` prefix in order to be recognized by the piskvork manager.
+
+Do not change the file `pisqpipe.cpp` and `pisqpipe.h` , otherwise your code may not work properly

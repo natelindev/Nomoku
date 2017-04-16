@@ -41,10 +41,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>pbrain-nomoku</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>pbrain-nomukou</TargetName>
+    <TargetName>pbrain-nomokou</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -77,11 +78,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Nomoku.cpp" />
+    <ClCompile Include="AI_Nomoku.cpp" />
+    <ClCompile Include="ANN.cpp" />
+    <ClCompile Include="Board_controller.cpp" />
+    <ClCompile Include="GA.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="AI_Wrapper.cpp" />
     <ClCompile Include="pisqpipe.cpp" />
+    <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI_Nomoku.h" />
+    <ClInclude Include="AI_Wrapper.h" />
+    <ClInclude Include="ANN.h" />
+    <ClInclude Include="Board_controller.h" />
+    <ClInclude Include="GA.h" />
+    <ClInclude Include="Logger.h" />
     <ClInclude Include="pisqpipe.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
